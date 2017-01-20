@@ -1,5 +1,26 @@
+include mixins
+
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  +bootswatch("superhero")
+  +nav("PlayToy", "navMenu", "inverse")
+    +nav_item("#", "active") Home
+    +nav_item("box.html") Box
+    +nav_item("garden.html") Garden
+
+  p Hello
+  p
+  +panel("Panel Heading") We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.
+  p
+  +button("warning", "warning.html", "mini") Warning
+  p
+  +alert("danger") Danger is close!
+  p
+  +listGroup("list")
+    +listItem("active") Cras justo odio
+    +listItem Dapibus ac facilisis in
+    +listItem Morbi leo risus
+    +listItem Dapibus ac facilisis in
+    +listItem Morbi leo risus
+    +listItem Dapibus ac facilisis in
