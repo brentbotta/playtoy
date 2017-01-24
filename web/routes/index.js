@@ -15,4 +15,10 @@ router.get('/box', function(req, res, next) {
 router.get('/garden', function(req, res, next) {
   res.render('garden', { title: 'Garden' });
 });
+
+/* GET Bay page. */
+router.get('/bay', function(req, res, next) {
+  res.render('bay', { title: 'Bay' });
+});
+
 module.exports = router;
