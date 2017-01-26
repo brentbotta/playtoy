@@ -22,7 +22,7 @@ router.get('/bay', function(req, res, next) {
 });
 
 /* GET Planning page. */
-router.get('/bay', function(req, res, next) {
+router.get('/planning', function(req, res, next) {
   res.render('planning', { title: 'Planning' });
 });
 
