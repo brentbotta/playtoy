@@ -21,4 +21,9 @@ router.get('/bay', function(req, res, next) {
   res.render('bay', { title: 'Bay' });
 });
 
+/* GET Planning page. */
+router.get('/bay', function(req, res, next) {
+  res.render('planning', { title: 'Planning' });
+});
+
 module.exports = router;
